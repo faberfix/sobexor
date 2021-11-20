@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}    
+
+:root{
+    --clr-red: rgb(253, 94, 83);
+    --clr-white: rgb(249, 252, 251);
+    --clr-green-light: rgb(176, 234, 205);
+    --clr-green: rgb(33, 191, 115);
+    
+}
+
+.bkg{
+    background: black;
+    font-family: Roboto;
+}
+
+.row{
+    background: var(--clr-green-light);
+    border-radius: 30px;
+    box-shadow: var(--clr-green) 0 5px 15px;
+}
+
+#bkg-login{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+}
+
+form .form-control:focus{
+    border-color: var(--clr-green-light);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--clr-red);
+}
+
+.btn1{
+    border: none;
+    outline: none;
+    height: 5em;
+    width: 100%;
+    background: black;
+    color: var(--clr-white);
+    border-radius: 4px;
+    font: bold;
+}
+
+.btn1:hover,
+.btn1:focus{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--clr-red);
+    background: black;
+    color: var(--clr-red);
+}
